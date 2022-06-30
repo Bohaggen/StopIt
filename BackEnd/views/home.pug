@@ -1,0 +1,1081 @@
+include _head
+
+.wrapper
+  header
+    .container
+      .header-data
+        .logo
+          a(href='index.html' title='')
+            img(src='images/logo.png' alt='')
+        // logo end
+        .search-bar
+          form
+            input(type='text' name='search' placeholder='Search...')
+            button(type='submit')
+              i.la.la-search
+        // search-bar end
+        nav
+          ul
+            li
+              a(href='index.html' title='')
+                span
+                  img(src='images/icon1.png' alt='')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Home
+            li
+              a(href='companies.html' title='')
+                span
+                  img(src='images/icon2.png' alt='')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Companies
+              ul
+                li
+                  a(href='companies.html' title='') Companies
+                li
+                  a(href='company-profile.html' title='') Company Profile
+            li
+              a(href='projects.html' title='')
+                span
+                  img(src='images/icon3.png' alt='')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Projects
+            li
+              a(href='profiles.html' title='')
+                span
+                  img(src='images/icon4.png' alt='')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Profiles
+              ul
+                li
+                  a(href='user-profile.html' title='') User Profile
+                li
+                  a(href='my-profile-feed.html' title='') my-profile-feed
+            li
+              a(href='jobs.html' title='')
+                span
+                  img(src='images/icon5.png' alt='')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Jobs
+            li
+              a.not-box-openm(href='#' title='')
+                span
+                  img(src='images/icon6.png' alt='')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Messages
+              #message.notification-box.msg
+                .nt-title
+                  h4 Setting
+                  a(href='#' title='') Clear all
+                .nott-list
+                  .notfication-details
+                    .noty-user-img
+                      img(src='images/resources/ny-img1.png' alt='')
+                    .notification-info
+                      h3
+                        a(href='messages.html' title='') Jassica William
+                      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do.
+                      span 2 min ago
+                    // notification-info
+                  .notfication-details
+                    .noty-user-img
+                      img(src='images/resources/ny-img2.png' alt='')
+                    .notification-info
+                      h3
+                        a(href='messages.html' title='') Jassica William
+                      p Lorem ipsum dolor sit amet.
+                      span 2 min ago
+                    // notification-info
+                  .notfication-details
+                    .noty-user-img
+                      img(src='images/resources/ny-img3.png' alt='')
+                    .notification-info
+                      h3
+                        a(href='messages.html' title='') Jassica William
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore et dolore magna aliqua.
+                      span 2 min ago
+                    // notification-info
+                  .view-all-nots
+                    a(href='messages.html' title='') View All Messsages
+                // nott-list end
+              // notification-box end
+            li
+              a.not-box-open(href='#' title='')
+                span
+                  img(src='images/icon7.png' alt='')
+                | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Notification
+              #notification.notification-box.noti
+                .nt-title
+                  h4 Setting
+                  a(href='#' title='') Clear all
+                .nott-list
+                  .notfication-details
+                    .noty-user-img
+                      img(src='images/resources/ny-img1.png' alt='')
+                    .notification-info
+                      h3
+                        a(href='#' title='') Jassica William
+                        |  Comment on your project.
+                      span 2 min ago
+                    // notification-info
+                  .notfication-details
+                    .noty-user-img
+                      img(src='images/resources/ny-img2.png' alt='')
+                    .notification-info
+                      h3
+                        a(href='#' title='') Jassica William
+                        |  Comment on your project.
+                      span 2 min ago
+                    // notification-info
+                  .notfication-details
+                    .noty-user-img
+                      img(src='images/resources/ny-img3.png' alt='')
+                    .notification-info
+                      h3
+                        a(href='#' title='') Jassica William
+                        |  Comment on your project.
+                      span 2 min ago
+                    // notification-info
+                  .notfication-details
+                    .noty-user-img
+                      img(src='images/resources/ny-img2.png' alt='')
+                    .notification-info
+                      h3
+                        a(href='#' title='') Jassica William
+                        |  Comment on your project.
+                      span 2 min ago
+                    // notification-info
+                  .view-all-nots
+                    a(href='#' title='') View All Notification
+                // nott-list end
+              // notification-box end
+        // nav end
+        .menu-btn
+          a(href='#' title='')
+            i.fa.fa-bars
+        // menu-btn end
+        .user-account
+          .user-info
+            img(src=`/${user.myProfile.profileImg}` alt='polytic side profile user')
+            a(href='#' title='') John
+            i.la.la-sort-down
+          #users.user-account-settingss
+            h3 Online Status
+            ul.on-off-status
+              li
+                .fgt-sec
+                  input#c5(type='radio' name='cc')
+                  label(for='c5')
+                    span
+                  small Online
+              li
+                .fgt-sec
+                  input#c6(type='radio' name='cc')
+                  label(for='c6')
+                    span
+                  small Offline
+            h3 Custom Status
+            .search_form
+              form
+                input(type='text' name='search')
+                button(type='submit') Ok
+            // search_form end
+            h3 Setting
+            ul.us-links
+              li
+                a(href='profile-account-setting.html' title='') Account Setting
+              li
+                a(href='#' title='') Privacy
+              li
+                a(href='#' title='') Faqs
+              li
+                a(href='#' title='') Terms &amp; Conditions
+            h3.tc 
+              form(action=`http://localhost:5000/api/v1/stopit/account/logout/${user._id}` method='put')
+                button.logoutBtn(type='submit' name='logout' value='submit') Logout
+          // user-account-settingss end
+      // header-data end
+  // header end
+  main
+    .main-section
+      .container
+        .main-section-data
+          .row
+            .col-lg-3.col-md-4.pd-left-none.no-pd
+              .main-left-sidebar.no-margin
+                .user-data.full-width
+                  .user-profile
+                    .username-dt
+                      .usr-pic
+                        img(src=`/${user.myProfile.profileImg}` alt='polytic user')
+                    // username-dt end
+                    .user-specs
+                      h3= user.username
+                      span= user.myProfile.nickname
+                  // user-profile end
+                  ul.user-fw-status
+                    li
+                      h4 P.E.P
+                      span 34
+                    li
+                      h4 My P.E.P
+                      span 155
+                    li
+                      a(href='my-profile.html' title='') View Profile
+                // user-data end
+                .user-data.full-width
+                  .profile-about
+                    .profile-specs
+                      h4 About Me
+                      p Dedicated to the mission of justice for all. Why is it black people have to accept america, but america doesn't have to accept us
+                      //user.myProfile.aboutYourself
+                  // user-profile end
+                  ul.user-fw-status
+                    li                    
+                      h4 My Beliefs
+                      p I want people to get a grip on life              
+                    li
+                      h4 My Movements
+                      //This will be the count of how many movements people follow
+                      span 34
+                    li
+                      h4 Movements I Follow
+                      //This will be the count of how many movements people follow
+                      span 34                      
+                    li
+                      a(href='my-profile.html' title='') Create A Movement
+                // user-data end             
+                .suggestions.full-width
+                  .sd-title
+                    h3 Suggestions
+                    i.la.la-ellipsis-v
+                  // sd-title end
+                  .suggestions-list
+                    .suggestion-usd
+                      img(src='images/resources/s1.png' alt='')
+                      .sgt-text
+                        h4 Jessica William
+                        span Graphic Designer
+                      span
+                        i.la.la-plus
+                    .suggestion-usd
+                      img(src='images/resources/s2.png' alt='')
+                      .sgt-text
+                        h4 John Doe
+                        span PHP Developer
+                      span
+                        i.la.la-plus
+                    .suggestion-usd
+                      img(src='images/resources/s3.png' alt='')
+                      .sgt-text
+                        h4 Poonam
+                        span Wordpress Developer
+                      span
+                        i.la.la-plus
+                    .suggestion-usd
+                      img(src='images/resources/s4.png' alt='')
+                      .sgt-text
+                        h4 Bill Gates
+                        span C &amp; C++ Developer
+                      span
+                        i.la.la-plus
+                    .suggestion-usd
+                      img(src='images/resources/s5.png' alt='')
+                      .sgt-text
+                        h4 Jessica William
+                        span Graphic Designer
+                      span
+                        i.la.la-plus
+                    .suggestion-usd
+                      img(src='images/resources/s6.png' alt='')
+                      .sgt-text
+                        h4 John Doe
+                        span PHP Developer
+                      span
+                        i.la.la-plus
+                    .view-more
+                      a(href='#' title='') View More
+                  // suggestions-list end
+                // suggestions end
+                .tags-sec.full-width
+                  ul
+                    li
+                      a(href='#' title='') Help Center
+                    li
+                      a(href='#' title='') About
+                    li
+                      a(href='#' title='') Privacy Policy
+                    li
+                      a(href='#' title='') Community Guidelines
+                    li
+                      a(href='#' title='') Cookies Policy
+                    li
+                      a(href='#' title='') Career
+                    li
+                      a(href='#' title='') Language
+                    li
+                      a(href='#' title='') Copyright Policy
+                  .cp-sec
+                    img(src='images/logo2.png' alt='')
+                    p
+                      img(src='images/cp.png' alt='')
+                      | Copyright 2019
+                // tags-sec end
+              // main-left-sidebar end
+            .col-lg-6.col-md-8.no-pd
+              .main-ws-sec
+                .post-topbar
+                  .user-picy
+                    img(src='images/resources/user-pic.png' alt='')
+                  .post-st
+                    ul
+                      li
+                        a.post_project(href='#' title='') Post a Project
+                      li
+                        a.post-jb.active(href='#' title='') Post a Job
+                  // post-st end
+                // post-topbar end
+                .posts-section
+                  .post-bar
+                    .post_topbar
+                      .usy-dt
+                        img(src='images/resources/us-pic.png' alt='')
+                        .usy-name
+                          h3 John Doe
+                          span
+                            img(src='images/clock.png' alt='')
+                            | 3 min ago
+                      .ed-opts
+                        a.ed-opts-open(href='#' title='')
+                          i.la.la-ellipsis-v
+                        ul.ed-options
+                          li
+                            a(href='#' title='') Edit Post
+                          li
+                            a(href='#' title='') Unsaved
+                          li
+                            a(href='#' title='') Unbid
+                          li
+                            a(href='#' title='') Close
+                          li
+                            a(href='#' title='') Hide
+                    .epi-sec
+                      ul.descp
+                        li
+                          img(src='images/icon8.png' alt='')
+                          span Epic Coder
+                        li
+                          img(src='images/icon9.png' alt='')
+                          span India
+                      ul.bk-links
+                        li
+                          a(href='#' title='')
+                            i.la.la-bookmark
+                        li
+                          a(href='#' title='')
+                            i.la.la-envelope
+                    .job_descp
+                      h3 Senior Wordpress Developer
+                      ul.job-dt
+                        li
+                          a(href='#' title='') Full Time
+                        li
+                          span $30 / hr
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... 
+                        a(href='#' title='') view more
+                      ul.skill-tags
+                        li
+                          a(href='#' title='') HTML
+                        li
+                          a(href='#' title='') PHP
+                        li
+                          a(href='#' title='') CSS
+                        li
+                          a(href='#' title='') Javascript
+                        li
+                          a(href='#' title='') Wordpress
+                    .job-status-bar
+                      ul.like-com
+                        li
+                          a(href='#')
+                            i.fas.fa-heart
+                            |  Like
+                          img(src='images/liked-img.png' alt='')
+                          span 25
+                        li
+                          a.com(href='#')
+                            i.fas.fa-comment-alt
+                            |  Comment 15
+                      a(href='#')
+                        i.fas.fa-eye
+                        | Views 50
+                  // post-bar end
+                  .top-profiles
+                    .pf-hd
+                      h3 Top Profiles
+                      i.la.la-ellipsis-v
+                    .profiles-slider
+                      .user-profy
+                        img(src='images/resources/user1.png' alt='')
+                        h3 John Doe
+                        span Graphic Designer
+                        ul
+                          li
+                            a.followw(href='#' title='') Follow
+                          li
+                            a.envlp(href='#' title='')
+                              img(src='images/envelop.png' alt='')
+                          li
+                            a.hire(href='#' title='') hire
+                        a(href='#' title='') View Profile
+                      // user-profy end
+                      .user-profy
+                        img(src='images/resources/user2.png' alt='')
+                        h3 John Doe
+                        span Graphic Designer
+                        ul
+                          li
+                            a.followw(href='#' title='') Follow
+                          li
+                            a.envlp(href='#' title='')
+                              img(src='images/envelop.png' alt='')
+                          li
+                            a.hire(href='#' title='') hire
+                        a(href='#' title='') View Profile
+                      // user-profy end
+                      .user-profy
+                        img(src='images/resources/user3.png' alt='')
+                        h3 John Doe
+                        span Graphic Designer
+                        ul
+                          li
+                            a.followw(href='#' title='') Follow
+                          li
+                            a.envlp(href='#' title='')
+                              img(src='images/envelop.png' alt='')
+                          li
+                            a.hire(href='#' title='') hire
+                        a(href='#' title='') View Profile
+                      // user-profy end
+                      .user-profy
+                        img(src='images/resources/user1.png' alt='')
+                        h3 John Doe
+                        span Graphic Designer
+                        ul
+                          li
+                            a.followw(href='#' title='') Follow
+                          li
+                            a.envlp(href='#' title='')
+                              img(src='images/envelop.png' alt='')
+                          li
+                            a.hire(href='#' title='') hire
+                        a(href='#' title='') View Profile
+                      // user-profy end
+                      .user-profy
+                        img(src='images/resources/user2.png' alt='')
+                        h3 John Doe
+                        span Graphic Designer
+                        ul
+                          li
+                            a.followw(href='#' title='') Follow
+                          li
+                            a.envlp(href='#' title='')
+                              img(src='images/envelop.png' alt='')
+                          li
+                            a.hire(href='#' title='') hire
+                        a(href='#' title='') View Profile
+                      // user-profy end
+                      .user-profy
+                        img(src='images/resources/user3.png' alt='')
+                        h3 John Doe
+                        span Graphic Designer
+                        ul
+                          li
+                            a.followw(href='#' title='') Follow
+                          li
+                            a.envlp(href='#' title='')
+                              img(src='images/envelop.png' alt='')
+                          li
+                            a.hire(href='#' title='') hire
+                        a(href='#' title='') View Profile
+                      // user-profy end
+                    // profiles-slider end
+                  // top-profiles end
+                  .post-bar
+                    .post_topbar
+                      .usy-dt
+                        img(src='images/resources/us-pic.png' alt='')
+                        .usy-name
+                          h3 John Doe
+                          span
+                            img(src='images/clock.png' alt='')
+                            | 3 min ago
+                      .ed-opts
+                        a.ed-opts-open(href='#' title='')
+                          i.la.la-ellipsis-v
+                        ul.ed-options
+                          li
+                            a(href='#' title='') Edit Post
+                          li
+                            a(href='#' title='') Unsaved
+                          li
+                            a(href='#' title='') Unbid
+                          li
+                            a(href='#' title='') Close
+                          li
+                            a(href='#' title='') Hide
+                    .epi-sec
+                      ul.descp
+                        li
+                          img(src='images/icon8.png' alt='')
+                          span Epic Coder
+                        li
+                          img(src='images/icon9.png' alt='')
+                          span India
+                      ul.bk-links
+                        li
+                          a(href='#' title='')
+                            i.la.la-bookmark
+                        li
+                          a(href='#' title='')
+                            i.la.la-envelope
+                        li
+                          a.bid_now(href='#' title='') Bid Now
+                    .job_descp
+                      h3 Senior Wordpress Developer
+                      ul.job-dt
+                        li
+                          a(href='#' title='') Full Time
+                        li
+                          span $30 / hr
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... 
+                        a(href='#' title='') view more
+                      ul.skill-tags
+                        li
+                          a(href='#' title='') HTML
+                        li
+                          a(href='#' title='') PHP
+                        li
+                          a(href='#' title='') CSS
+                        li
+                          a(href='#' title='') Javascript
+                        li
+                          a(href='#' title='') Wordpress
+                    .job-status-bar
+                      ul.like-com
+                        li
+                          a(href='#')
+                            i.fas.fa-heart
+                            |  Like
+                          img(src='images/liked-img.png' alt='')
+                          span 25
+                        li
+                          a.com(href='#')
+                            i.fas.fa-comment-alt
+                            |  Comment 15
+                      a(href='#')
+                        i.fas.fa-eye
+                        | Views 50
+                  // post-bar end
+                  .posty
+                    .post-bar.no-margin
+                      .post_topbar
+                        .usy-dt
+                          img(src='images/resources/us-pc2.png' alt='')
+                          .usy-name
+                            h3 John Doe
+                            span
+                              img(src='images/clock.png' alt='')
+                              | 3 min ago
+                        .ed-opts
+                          a.ed-opts-open(href='#' title='')
+                            i.la.la-ellipsis-v
+                          ul.ed-options
+                            li
+                              a(href='#' title='') Edit Post
+                            li
+                              a(href='#' title='') Unsaved
+                            li
+                              a(href='#' title='') Unbid
+                            li
+                              a(href='#' title='') Close
+                            li
+                              a(href='#' title='') Hide
+                      .epi-sec
+                        ul.descp
+                          li
+                            img(src='images/icon8.png' alt='')
+                            span Epic Coder
+                          li
+                            img(src='images/icon9.png' alt='')
+                            span India
+                        ul.bk-links
+                          li
+                            a(href='#' title='')
+                              i.la.la-bookmark
+                          li
+                            a(href='#' title='')
+                              i.la.la-envelope
+                      .job_descp
+                        h3 Senior Wordpress Developer
+                        ul.job-dt
+                          li
+                            a(href='#' title='') Full Time
+                          li
+                            span $30 / hr
+                        p
+                          | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at. Etiam id magna sit amet... 
+                          a(href='#' title='') view more
+                        ul.skill-tags
+                          li
+                            a(href='#' title='') HTML
+                          li
+                            a(href='#' title='') PHP
+                          li
+                            a(href='#' title='') CSS
+                          li
+                            a(href='#' title='') Javascript
+                          li
+                            a(href='#' title='') Wordpress
+                      .job-status-bar
+                        ul.like-com
+                          li
+                            a(href='#')
+                              i.fas.fa-heart
+                              |  Like
+                            img(src='images/liked-img.png' alt='')
+                            span 25
+                          li
+                            a.com(href='#')
+                              i.fas.fa-comment-alt
+                              |  Comment 15
+                        a(href='#')
+                          i.fas.fa-eye
+                          | Views 50
+                    // post-bar end
+                    .comment-section
+                      a.plus-ic(href='#')
+                        i.la.la-plus
+                      .comment-sec
+                        ul
+                          li
+                            .comment-list
+                              .bg-img
+                                img(src='images/resources/bg-img1.png' alt='')
+                              .comment
+                                h3 John Doe
+                                span
+                                  img(src='images/clock.png' alt='')
+                                  |  3 min ago
+                                p Lorem ipsum dolor sit amet, 
+                                a.active(href='#' title='')
+                                  i.fa.fa-reply-all
+                                  | Reply
+                            // comment-list end
+                            ul
+                              li
+                                .comment-list
+                                  .bg-img
+                                    img(src='images/resources/bg-img2.png' alt='')
+                                  .comment
+                                    h3 John Doe
+                                    span
+                                      img(src='images/clock.png' alt='')
+                                      |  3 min ago
+                                    p Hi John 
+                                    a(href='#' title='')
+                                      i.fa.fa-reply-all
+                                      | Reply
+                                // comment-list end
+                          li
+                            .comment-list
+                              .bg-img
+                                img(src='images/resources/bg-img3.png' alt='')
+                              .comment
+                                h3 John Doe
+                                span
+                                  img(src='images/clock.png' alt='')
+                                  |  3 min ago
+                                p
+                                  | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam luctus hendrerit metus, ut ullamcorper quam finibus at.
+                                a(href='#' title='')
+                                  i.fa.fa-reply-all
+                                  | Reply
+                            // comment-list end
+                      // comment-sec end
+                      .post-comment
+                        .cm_img
+                          img(src='images/resources/bg-img4.png' alt='')
+                        .comment_box
+                          form
+                            input(type='text' placeholder='Post a comment')
+                            button(type='submit') Send
+                      // post-comment end
+                    // comment-section end
+                  // posty end
+                  .process-comm
+                    .spinner
+                      .bounce1
+                      .bounce2
+                      .bounce3
+                  // process-comm end
+                // posts-section end
+              // main-ws-sec end
+            .col-lg-3.pd-right-none.no-pd
+              .right-sidebar
+                .widget.widget-about
+                  img(src='images/wd-logo.png' alt='')
+                  h3 Track Time on Workwise
+                  span Pay only for the Hours worked
+                  .sign_link
+                    h3
+                      a(href='sign-in.html' title='') Sign up
+                    a(href='#' title='') Learn More
+                // widget-about end
+                .widget.widget-jobs
+                  .sd-title
+                    h3 Top Jobs
+                    i.la.la-ellipsis-v
+                  .jobs-list
+                    .job-info
+                      .job-details
+                        h3 Senior Product Designer
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                      .hr-rate
+                        span $25/hr
+                    // job-info end
+                    .job-info
+                      .job-details
+                        h3 Senior UI / UX Designer
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                      .hr-rate
+                        span $25/hr
+                    // job-info end
+                    .job-info
+                      .job-details
+                        h3 Junior Seo Designer
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                      .hr-rate
+                        span $25/hr
+                    // job-info end
+                    .job-info
+                      .job-details
+                        h3 Senior PHP Designer
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                      .hr-rate
+                        span $25/hr
+                    // job-info end
+                    .job-info
+                      .job-details
+                        h3 Senior Developer Designer
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                      .hr-rate
+                        span $25/hr
+                    // job-info end
+                  // jobs-list end
+                // widget-jobs end
+                .widget.widget-jobs
+                  .sd-title
+                    h3 Most Viewed This Week
+                    i.la.la-ellipsis-v
+                  .jobs-list
+                    .job-info
+                      .job-details
+                        h3 Senior Product Designer
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                      .hr-rate
+                        span $25/hr
+                    // job-info end
+                    .job-info
+                      .job-details
+                        h3 Senior UI / UX Designer
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                      .hr-rate
+                        span $25/hr
+                    // job-info end
+                    .job-info
+                      .job-details
+                        h3 Junior Seo Designer
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit..
+                      .hr-rate
+                        span $25/hr
+                    // job-info end
+                  // jobs-list end
+                // widget-jobs end
+                .widget.suggestions.full-width
+                  .sd-title
+                    h3 Most Viewed People
+                    i.la.la-ellipsis-v
+                  // sd-title end
+                  .suggestions-list
+                    .suggestion-usd
+                      img(src='images/resources/s1.png' alt='')
+                      .sgt-text
+                        h4 Jessica William
+                        span Graphic Designer
+                      span
+                        i.la.la-plus
+                    .suggestion-usd
+                      img(src='images/resources/s2.png' alt='')
+                      .sgt-text
+                        h4 John Doe
+                        span PHP Developer
+                      span
+                        i.la.la-plus
+                    .suggestion-usd
+                      img(src='images/resources/s3.png' alt='')
+                      .sgt-text
+                        h4 Poonam
+                        span Wordpress Developer
+                      span
+                        i.la.la-plus
+                    .suggestion-usd
+                      img(src='images/resources/s4.png' alt='')
+                      .sgt-text
+                        h4 Bill Gates
+                        span C &amp; C++ Developer
+                      span
+                        i.la.la-plus
+                    .suggestion-usd
+                      img(src='images/resources/s5.png' alt='')
+                      .sgt-text
+                        h4 Jessica William
+                        span Graphic Designer
+                      span
+                        i.la.la-plus
+                    .suggestion-usd
+                      img(src='images/resources/s6.png' alt='')
+                      .sgt-text
+                        h4 John Doe
+                        span PHP Developer
+                      span
+                        i.la.la-plus
+                    .view-more
+                      a(href='#' title='') View More
+                  // suggestions-list end
+              // right-sidebar end
+        // main-section-data end
+  .post-popup.pst-pj
+    .post-project
+      h3 Post a project
+      .post-project-fields
+        form
+          .row
+            .col-lg-12
+              input(type='text' name='title' placeholder='Title')
+            .col-lg-12
+              .inp-field
+                select
+                  option Category
+                  option Category 1
+                  option Category 2
+                  option Category 3
+            .col-lg-12
+              input(type='text' name='skills' placeholder='Skills')
+            .col-lg-12
+              .price-sec
+                .price-br
+                  input(type='text' name='price1' placeholder='Price')
+                  i.la.la-dollar
+                span To
+                .price-br
+                  input(type='text' name='price1' placeholder='Price')
+                  i.la.la-dollar
+            .col-lg-12
+              textarea(name='description' placeholder='Description')
+            .col-lg-12
+              ul
+                li
+                  button.active(type='submit' value='post') Post
+                li
+                  a(href='#' title='') Cancel
+      // post-project-fields end
+      a(href='#' title='')
+        i.la.la-times-circle-o
+    // post-project end
+  // post-project-popup end
+  .post-popup.job_post
+    .post-project
+      h3 Post a job
+      .post-project-fields
+        form
+          .row
+            .col-lg-12
+              input(type='text' name='title' placeholder='Title')
+            .col-lg-12
+              .inp-field
+                select
+                  option Category
+                  option Category 1
+                  option Category 2
+                  option Category 3
+            .col-lg-12
+              input(type='text' name='skills' placeholder='Skills')
+            .col-lg-6
+              .price-br
+                input(type='text' name='price1' placeholder='Price')
+                i.la.la-dollar
+            .col-lg-6
+              .inp-field
+                select
+                  option Full Time
+                  option Half time
+            .col-lg-12
+              textarea(name='description' placeholder='Description')
+            .col-lg-12
+              ul
+                li
+                  button.active(type='submit' value='post') Post
+                li
+                  a(href='#' title='') Cancel
+      // post-project-fields end
+      a(href='#' title='')
+        i.la.la-times-circle-o
+    // post-project end
+  // post-project-popup end
+  .chatbox-list
+    .chatbox
+      .chat-mg
+        a(href='#' title='')
+          img(src='images/resources/usr-img1.png' alt='')
+        span 2
+      .conversation-box
+        .con-title.mg-3
+          .chat-user-info
+            img(src=`/${user.myProfile.profileImg}` alt='')
+            h3
+              | John Doe 
+              span.status-info
+          .st-icons
+            a(href='#' title='')
+              i.la.la-cog
+            a.close-chat(href='#' title='')
+              i.la.la-minus-square
+            a.close-chat(href='#' title='')
+              i.la.la-close
+        .chat-hist.mCustomScrollbar(data-mcs-theme='dark')
+          .chat-msg
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.
+            span Sat, Aug 23, 1:10 PM
+          .date-nd
+            span Sunday, August 24
+          .chat-msg.st2
+            p Cras ultricies ligula.
+            span 5 minutes ago
+          .chat-msg
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.
+            span Sat, Aug 23, 1:10 PM
+        // chat-list end
+        .typing-msg
+          form
+            textarea(placeholder='Type a message here')
+            button(type='submit')
+              i.fa.fa-send
+          ul.ft-options
+            li
+              a(href='#' title='')
+                i.la.la-smile-o
+            li
+              a(href='#' title='')
+                i.la.la-camera
+            li
+              a(href='#' title='')
+                i.fa.fa-paperclip
+        // typing-msg end
+      // chat-history end
+    .chatbox
+      .chat-mg
+        a(href='#' title='')
+          img(src='images/resources/usr-img2.png' alt='')
+      .conversation-box
+        .con-title.mg-3
+          .chat-user-info
+            img(src='images/resources/us-img1.png' alt='')
+            h3
+              | John Doe 
+              span.status-info
+          .st-icons
+            a(href='#' title='')
+              i.la.la-cog
+            a.close-chat(href='#' title='')
+              i.la.la-minus-square
+            a.close-chat(href='#' title='')
+              i.la.la-close
+        .chat-hist.mCustomScrollbar(data-mcs-theme='dark')
+          .chat-msg
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.
+            span Sat, Aug 23, 1:10 PM
+          .date-nd
+            span Sunday, August 24
+          .chat-msg.st2
+            p Cras ultricies ligula.
+            span 5 minutes ago
+          .chat-msg
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor.
+            span Sat, Aug 23, 1:10 PM
+        // chat-list end
+        .typing-msg
+          form
+            textarea(placeholder='Type a message here')
+            button(type='submit')
+              i.fa.fa-send
+          ul.ft-options
+            li
+              a(href='#' title='')
+                i.la.la-smile-o
+            li
+              a(href='#' title='')
+                i.la.la-camera
+            li
+              a(href='#' title='')
+                i.fa.fa-paperclip
+        // typing-msg end
+      // chat-history end
+    .chatbox
+      .chat-mg.bx
+        a(href='#' title='')
+          img(src='images/chat.png' alt='')
+        span 2
+      .conversation-box
+        .con-title
+          h3 Messages
+          a.close-chat(href='#' title='')
+            i.la.la-minus-square
+        .chat-list
+          .conv-list.active
+            .usrr-pic
+              img(src='images/resources/usy1.png' alt='')
+              span.active-status.activee
+            .usy-info
+              h3 John Doe
+              span
+                | Lorem ipsum dolor 
+                img(src='images/smley.png' alt='')
+            .ct-time
+              span 1:55 PM
+            span.msg-numbers 2
+          .conv-list
+            .usrr-pic
+              img(src='images/resources/usy2.png' alt='')
+            .usy-info
+              h3 John Doe
+              span
+                | Lorem ipsum dolor 
+                img(src='images/smley.png' alt='')
+            .ct-time
+              span 11:39 PM
+          .conv-list
+            .usrr-pic
+              img(src='images/resources/usy3.png' alt='')
+            .usy-info
+              h3 John Doe
+              span
+                | Lorem ipsum dolor 
+                img(src='images/smley.png' alt='')
+            .ct-time
+              span 0.28 AM
+        // chat-list end
+      // conversation-box end
+  // chatbox-list end
+// theme-layout end
+include _foot

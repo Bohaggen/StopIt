@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StopIt.Pages.CreatePetitionPage"
+             Title="Create A Petition">
+    <ContentPage.Content>
+        <ScrollView>
+            <Frame HasShadow="True"
+               BackgroundColor="AliceBlue">
+                <StackLayout Margin="0,20,0,0">
+                    <Label Text="Create Your Petition"
+                       Margin="0,0,0,100"
+                   FontSize="30"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+                    <Entry Placeholder="Title of Petition"
+                   x:Name="title"
+                   FontSize="25"/>
+                    <Editor Margin="0,20,0,0"
+                        x:Name="description"
+                        FontSize="25"
+                        Placeholder="Description of the Petition"/>
+                    <Picker Title="Choose Type"
+                        x:Name="gov"
+                        FontSize="25"
+                        Margin="0,20,0,0">
+                        <Picker.Items>
+                            <x:String>Local Gov</x:String>
+                            <x:String>Federal Gov</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <Picker Title="Choose Category"
+                    x:Name="category"
+                    FontSize="25"
+                    Margin="0,20,0,0">
+                    </Picker>
+                    <Button Text="Submit Petition"
+                        x:Name="submitPet"
+                        Pressed="submitPet_Pressed"
+                        Margin="0,25,0,0"
+                        FontSize="30"
+                        BackgroundColor="Coral"
+                        TextColor="Black"
+                        CornerRadius="25">
+                    </Button>
+                </StackLayout>
+            </Frame>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

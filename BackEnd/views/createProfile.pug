@@ -1,0 +1,69 @@
+include _head
+
+.wrapper
+  .sign-in-page
+    .signin-popup
+      .profile-pop
+        .row
+        .col-md-8.offset-4
+          .cPLure
+            h5 Let's create your profile now!
+        .col-12
+            form.profileForm(enctype='multipart/form-data' action=`http://localhost:5000/api/v1/stopit/account/add/profile/${user.id}` method='Post')
+              .row
+                .col-lg-12.no-pdd.offset-3
+                  .pro-field
+                    .imgContainer
+                      .imgWrapper
+                        .image
+                          img(src='' alt='user profile image')
+                        .imgContent
+                        .imgIcon
+                          i.fas.fa-cloud-upload-alt
+                          .text No file chosen, yet!
+                        #cancel-btn
+                          i.fas.fa-times
+                          .file-name | File name here
+                      button#custom-btn(type='button' onclick='HandleImage();') Choose Your Profile Image 
+                      input#default-btn(type='file' name='profileImg' accept='image/png, image/jpeg' hidden)
+                  // end of image upload
+                .col-lg-4.offset-2
+                  .pro-field
+                    input#nickname(type='text' name='nickname' placeholder='nickname')
+                    i.la.la-user                  
+                .col-lg-12.no-pdd.offset-4
+                  .pro-field
+                    label.aboutLabel(for='aboutYourself') Tell Us About Yourself!                       
+                .col-lg-12.no-pdd.offset-2
+                  .pro-field
+                    textarea.profile(name='aboutYourself' placeholder='Tell us about yourself')
+                .col-lg-8.no-pdd.offset-4
+                  .pro-field
+                    label.aboutLabel(for='yourCause') What is your cause? What do you believe in?                                    
+                .col-lg-12.no-pdd.offset-2
+                  .pro-field
+                    textarea.profile(name='yourCause' placeholder='What is your cause?')
+                .col-lg-12.no-pdd.offset-2
+                  button.submitBtn(type='submit' value='submit') Create Your Profile
+    form.skip(action='http://localhost:5000/api/v1/stopit/account/skip' method='Get')
+      button.submitBtn(type='submit' value='submit') Skip For Now
+    .footy-sec
+      .container
+        ul
+          li
+            a(href='about.html' title='') About
+          li
+            a(href='#' title='') Privacy Policy
+          li
+            a(href='#' title='') Community Guidelines
+          li
+            a(href='#' title='') Cookies Policy
+          li
+            a(href='#' title='') Copyright Policy
+        p
+          img(src='images/copy-icon.png' alt='')
+          | Copyright 2019
+    // footy-sec end
+  // sign-in-page end
+// theme-layout end
+include _foot

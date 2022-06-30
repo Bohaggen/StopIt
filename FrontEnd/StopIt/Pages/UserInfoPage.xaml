@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+             x:Class="StopIt.Pages.UserInfoPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20"
+                         Margin="25">
+                <Label TextColor="#CE0B06"
+                       Text="We Need a Little More Info"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       Margin="30,0,30,0" />
+                <Frame HasShadow="True"
+                       Padding="25"
+                       Margin="0,30,0,0">
+                    <StackLayout>
+                        <Label Text="Enter Your Credentials"
+                               FontAttributes="Bold"
+                               FontSize="Title"
+                               HorizontalOptions="Center"
+                               TextColor="#CE0B06" />
+                        <Entry Placeholder="First Name"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               x:Name="entFirst"
+                               Keyboard="Text" />
+                        <Entry Placeholder="Last Name"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               x:Name="entLast"/>
+                        <Entry Placeholder="Your address"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               Keyboard="Text"
+                               x:Name="entaddress"/>
+                        <Picker x:Name="statePicker"
+                                BackgroundColor="BlanchedAlmond"/>                        
+                        <Entry Placeholder="zipcode"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               x:Name="entZip"
+                               Keyboard="Numeric" />
+                        <Entry Placeholder="Enter Phone Number"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               x:Name="entPhoneNum"
+                               Keyboard="Telephone" />
+                        <forms:SignaturePadView x:Name="sigPad" 
+                                                BackgroundColor="Azure" 
+                                                StrokeColor="DarkBlue"
+                                                StrokeWidth="3"
+                                                WidthRequest="280"
+                                                HeightRequest="100"/>
+                        <Label Margin="20,0,20,0"
+                               FontSize="Small"
+                               HorizontalTextAlignment="Center"
+                               TextColor="#80574D"
+                               Text="By creating an account you agree to our Terms of Service and Privacy Policy" />
+                        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                            <Button x:Name="saveInfo" 
+                                    Text="Save"
+                                    BackgroundColor="Red"
+                                    Clicked="saveInfo_Clicked"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

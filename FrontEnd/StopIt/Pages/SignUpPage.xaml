@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StopIt.Pages.SignUpPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Spacing="20"
+                         Margin="25">
+                <Label TextColor="#CE0B06"
+                       Text="SIGN UP"
+                       FontSize="Large"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"
+                       Margin="30,0,30,0" />
+                <Frame HasShadow="True"
+                       Padding="25"
+                       Margin="0,30,0,0">
+                    <StackLayout>
+                        <Label Text="Create An Account"
+                               FontAttributes="Bold"
+                               FontSize="Title"
+                               HorizontalOptions="Center"
+                               TextColor="#CE0B06" />
+                        <Entry Placeholder="Create username make it unique"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               x:Name="createUser"
+                               Keyboard="Text" />
+                        <Entry Placeholder="Enter Your Email"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               x:Name="entEmail"
+                               Keyboard="Email" />
+                        <Entry Placeholder="Password"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               IsPassword="True"
+                               x:Name="entPassword"
+                               Keyboard="Default" />
+                        <Entry Placeholder="Confirm Password"
+                               PlaceholderColor="#80574D"
+                               TextColor="#80574D"
+                               IsPassword="True"
+                               x:Name="entConfirmPassword"
+                               Keyboard="Default" />
+                        <Label Margin="20,0,20,0"
+                               FontSize="Small"
+                               HorizontalTextAlignment="Center"
+                               TextColor="#80574D"
+                               Text="By creating an account you agree to our Terms of Service and Privacy Policy" />
+                    </StackLayout>
+                </Frame>
+                <Button Text="CONTINUE"
+                        TextColor="White"
+                        BackgroundColor="#CE0B06"
+                        x:Name="BtnSignUp" Clicked="BtnSignUp_Clicked"/>
+                <Button Text="Already Have An Account?"
+                        BorderColor="Transparent"
+                        BackgroundColor="Transparent"
+                        TextColor="Blue"
+                        x:Name="Login" Clicked="Login_Clicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>

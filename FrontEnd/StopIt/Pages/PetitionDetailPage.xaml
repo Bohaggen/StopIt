@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StopIt.Pages.PetitionDetailPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Grid>
+                    <Image x:Name="imgPetition"
+                           Aspect="Fill"
+                           HeightRequest="300" />
+                    <Image Source="close"
+                           HeightRequest="40"
+                           WidthRequest="40"
+                           Margin="10,20,20,20"
+                           VerticalOptions="Start"
+                           HorizontalOptions="Start">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer x:Name="TapBack" 
+                                                  Tapped="TapBack_Tapped"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Grid>
+                <Frame CornerRadius="25"
+                   Margin="10"
+                   BackgroundColor="Black">
+                    <StackLayout Margin="20">
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Margin="0,0,10,0" 
+                                     Orientation="Horizontal">
+                                <Label  Text="Owner Of Petition :"
+                                        FontSize="Large"
+                                        TextColor="Beige"
+                                        HorizontalOptions="Start" />
+                                <Label x:Name="petOwner"
+                                       Margin="10,0,0,0"
+                                       TextColor="#15D5D2"
+                                       HorizontalOptions="Start"
+                                       FontSize="Large" />
+                            </StackLayout>
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="0,20,0,0">
+                                <Label Text="Petition Title :"
+                                       TextColor="Beige"
+                                       FontSize="Large"/>
+                                <Label x:Name="titlePet"
+                                       Margin="20,0,0,0"
+                                       TextColor="#15D5D2"
+                                       FontSize="Large"
+                                       Text="Hello" />
+                            </StackLayout>
+                            <Label x:Name="descriptionPet"
+                               TextColor="#2B093C"
+                               HorizontalOptions="Start"
+                               FontSize="Medium" />
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"
+                                 Margin="5,0,0,0">
+                            <Label Text="Signature Count :"
+                           TextColor="#B00905"
+                           FontSize="Large"
+                           Margin="0,10,0,0" />
+                            <Label x:Name="signatureCount"
+                               TextColor="#80574D"
+                               FontSize="Large"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"
+                                 Margin="5,0,0,0">
+                            <Label Text="Date Of Petition :"
+                           TextColor="#B00905"
+                           FontSize="Large" />
+                            <Label x:Name="date"
+                                   Text="Hello"
+                               TextColor="#80574D"
+                               FontSize="Large"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Spacing="20"
+                             VerticalOptions="EndAndExpand"
+                             HorizontalOptions="CenterAndExpand"
+                             Margin="0,0,0,40">
+                    <Button x:Name="signPetition"
+                            Text="Sign Petition"
+                            Clicked="signPetition_Clicked"
+                            FontSize="25"
+                            WidthRequest="250"
+                            BackgroundColor="CadetBlue"
+                            CornerRadius="25">
+                    </Button>
+                    <Button x:Name="messageBoard"
+                            Text="Message Board"
+                            Clicked="messageBoard_Clicked"
+                            FontSize="25"
+                            WidthRequest="250"
+                            BackgroundColor="DarkOrange"
+                            CornerRadius="25">
+                    </Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

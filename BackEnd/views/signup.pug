@@ -1,0 +1,153 @@
+doctype html
+//head
+include _head
+
+.wrapper
+  .sign-in-page
+    .signin-popup
+      .signin-pop
+        .row
+          .col-lg-6
+            .cmp-info
+              .cm-logo
+                img(src='images/polytic/logo_pt.png' alt='Polytic Logo')
+                p
+                  | Polytic, is a social media platform designed specifically for people to stand and fight for something that they believe in. What do you believe in? What do you stand for?
+            // cmp-info end
+          .col-lg-6
+            .login-sec
+              ul.sign-control
+                li.current(data-tab='tab-1')
+                  a(href='#' title='') Sign in
+                li(data-tab='tab-2')
+                  a(href='#' title='') Sign up
+              #tab-1.sign_in_sec.current
+                h3 Sign in
+                form.loginForm(action='http://localhost:5000/api/v1/stopit/account/login/success' method='Post')
+                  .row
+                    .col-lg-12.no-pdd
+                      .sn-field
+                        input#username(type='text' name='username' placeholder='Username')
+                        i.la.la-user
+                      // sn-field end
+                    .col-lg-12.no-pdd
+                      .sn-field
+                        input#password(type='password' name='password' placeholder='Password')
+                        i.la.la-lock
+                    .col-lg-12.no-pdd
+                      .checky-sec
+                        .fgt-sec
+                          input#c1(type='checkbox' name='cc')
+                          label(for='c1')
+                            span
+                          small Remember me
+                        // fgt-sec end
+                        a(href='#' title='') Forgot Password?
+                    .col-lg-12.no-pdd
+                      button(type='submit' value='submit') Sign in
+                .login-resources
+                  h4 Login Via Social Account
+                  ul
+                    li
+                      a.fb(href='#' title='')
+                        i.fa.fa-facebook
+                        | Login Via Facebook
+                    li
+                      a.tw(href='#' title='')
+                        i.fa.fa-twitter
+                        | Login Via Twitter
+                // login-resources end
+              // sign_in_sec end
+              #tab-2.sign_in_sec
+                .signup-tab
+                  i.fa.fa-long-arrow-left
+                  h2 johndoe@example.com
+                  ul
+                    li.current(data-tab='tab-3')
+                      a(href='#' title='') User
+                    li(data-tab='tab-4')
+                      a(href='#' title='') Politician
+                // signup-tab end
+                #tab-3.dff-tab.current
+                  form.userForm(action='http://localhost:5000/api/v1/stopit/account/add/view' method='Post')
+                    .row
+                      .col-lg-12.no-pdd
+                        .sn-field
+                          input(type='text' name='username' placeholder='Username')
+                          i.la.la-user
+                      .col-lg-12.no-pdd
+                        .sn-field
+                          input(type='text' name='email' placeholder='Email')
+                          i.la.la-globe
+                      .col-lg-12.no-pdd
+                        .sn-field
+                          input(type='password' name='password' placeholder='Password')
+                          i.la.la-lock
+                      .col-lg-12.no-pdd
+                        .sn-field
+                          input(type='password' name='confirmPassword' placeholder='Confirm Password')
+                          i.la.la-lock
+                      .col-lg-12.no-pdd
+                        .checky-sec.st2
+                          .fgt-sec
+                            input#c2(type='checkbox' name='agreeTerms')
+                            label(for='c2')
+                              span
+                            small Yes, I understand and agree to the polytic Terms &amp; Conditions.
+                          // fgt-sec end
+                      .col-lg-12.no-pdd
+                        button(type='submit' value='submit') Get Started
+                // dff-tab end
+                #tab-4.dff-tab
+                  form
+                    .row
+                      .col-lg-12.no-pdd
+                        .sn-field
+                          input(type='text' name='company-name' placeholder='Company Name')
+                          i.la.la-building
+                      .col-lg-12.no-pdd
+                        .sn-field
+                          input(type='text' name='country' placeholder='Country')
+                          i.la.la-globe
+                      .col-lg-12.no-pdd
+                        .sn-field
+                          input(type='password' name='password' placeholder='Password')
+                          i.la.la-lock
+                      .col-lg-12.no-pdd
+                        .sn-field
+                          input(type='password' name='repeat-password' placeholder='Repeat Password')
+                          i.la.la-lock
+                      .col-lg-12.no-pdd
+                        .checky-sec.st2
+                          .fgt-sec
+                            input#c3(type='checkbox' name='cc')
+                            label(for='c3')
+                              span
+                            small Yes, I understand and agree to the workwise Terms &amp; Conditions.
+                          // fgt-sec end
+                      .col-lg-12.no-pdd
+                        button(type='submit' value='submit') Get Started
+                // dff-tab end
+            // login-sec end
+      // signin-pop end
+    // signin-popup end
+    .footy-sec
+      .container
+        ul
+          li
+            a(href='about.html' title='') About
+          li
+            a(href='#' title='') Privacy Policy
+          li
+            a(href='#' title='') Community Guidelines
+          li
+            a(href='#' title='') Cookies Policy
+          li
+            a(href='#' title='') Copyright Policy
+        p
+          img(src='images/copy-icon.png' alt='')
+          | Copyright 2019
+    // footy-sec end
+  // sign-in-page end
+// theme-layout end
+include _foot
